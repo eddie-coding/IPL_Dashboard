@@ -2,26 +2,25 @@ package com.eddie.ipldashboard.model;
 
 import java.time.LocalDate;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Match {
 
+    @Id
     private long id;
     private String city;
     private LocalDate date;
-    //private String Season;
-    //private String MatchNumber;
     private String team1;
     private String team2;
     private String venue;
     private String tossWinner;
     private String tossDecision;
-    //private String SuperOver;
     private String matchWinner;
     private String result;
     private String resultMargin;
-    //private String method;
     private String playerOfMatch;
-    //private String Team1Players;
-    //private String Team2Players;
     private String umpire1;
     private String umpire2;
     

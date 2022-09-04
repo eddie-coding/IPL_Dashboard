@@ -1,6 +1,8 @@
-package com.eddie.ipldashboard;
+package com.eddie.ipldashboard.data;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeFormatterBuilder;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,7 +21,9 @@ public class MatchDataProcessor implements ItemProcessor<MatchInput, Match> {
     Match match = new Match();
     match.setId(Long.parseLong(matchInput.getID()));
     match.setCity(matchInput.getCity());
-    match.setDate(LocalDate.parse(matchInput.getDate()));
+    DateTimeFormatter df = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+    LocalDate d1 = LocalDate.parse(matchInput.getDate(), df);
+    match.setDate(d1);
     match.setPlayerOfMatch(matchInput.getPlayer_of_Match());
     match.setVenue(matchInput.getVenue());
 

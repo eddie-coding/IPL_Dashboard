@@ -1,4 +1,4 @@
-package com.eddie.ipldashboard;
+package com.eddie.ipldashboard.data;
 
 public class MatchInput {
 
@@ -119,18 +119,6 @@ public class MatchInput {
     public void setPlayer_of_Match(String player_of_Match) {
         Player_of_Match = player_of_Match;
     }
-    public String getTeam1Players() {
-        return Team1Players;
-    }
-    public void setTeam1Players(String team1Players) {
-        Team1Players = team1Players;
-    }
-    public String getTeam2Players() {
-        return Team2Players;
-    }
-    public void setTeam2Players(String team2Players) {
-        Team2Players = team2Players;
-    }
     public String getUmpire1() {
         return Umpire1;
     }
@@ -142,5 +130,17 @@ public class MatchInput {
     }
     public void setUmpire2(String umpire2) {
         Umpire2 = umpire2;
+    }
+    public String getTeam1Players() {
+        return Team1Players;
+    }
+    public void setTeam1Players(String team1Players) {
+        Team1Players = team1Players;
+    }
+    public String getTeam2Players() {
+        return Team2Players;
+    }
+    public void setTeam2Players(String team2Players) {
+        Team2Players = team2Players;
     }
 }
