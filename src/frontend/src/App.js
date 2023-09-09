@@ -11,7 +11,7 @@ function App() {
       <Routes>
           <Route path="/teams/:teamName/matches/:year" element={<MatchPage/>}/>
           <Route path="/teams/:teamName" element={<TeamPage/>}/>
-          <Route path="/teams" element={<HomePage/>}/>
+          <Route path="/" element={<HomePage/>}/>
         </Routes>    
       </Router>
     </div>
